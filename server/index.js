@@ -41,6 +41,24 @@ app.use('/api/users', userRoutes);
 app.use('/api/menus', menuRoutes);
 app.use('/api/orders', orderRoutes);
 
+// Initialize default users if they don't exist
+function initializeDefaultUsers() {
+  const users = db.all('users');
+
+  // Create coordinator if doesn't exist
+  if (!users.find(u => u.phone === '1122cc')) {
+    db.insert('users', { phone: '1122cc', name: 'Coordinator', role: 'coordinator' });
+    console.log('✅ Created default coordinator user (1122cc)');
+  }
+
+  // Create test user if doesn't exist
+  if (!users.find(u => u.phone === '999')) {
+    db.insert('users', { phone: '999', name: 'Test User', role: 'user' });
+    console.log('✅ Created default test user (999)');
+  }
+}
+
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
+  initializeDefaultUsers();
 });
