@@ -1,0 +1,353 @@
+{
+  "users": [
+    {
+      "name": "Super Admin",
+      "phone": "112233",
+      "role": "super_admin",
+      "id": 1,
+      "phones": [
+        "112233",
+        "112234"
+      ]
+    },
+    {
+      "name": "Coordinator",
+      "phone": "1122cc",
+      "role": "coordinator",
+      "id": 2
+    },
+    {
+      "name": "Regular Member",
+      "phone": "8888",
+      "role": "member",
+      "id": 3
+    },
+    {
+      "name": "Akhil",
+      "phone": "999",
+      "role": "member",
+      "id": 4,
+      "phones": [
+        "999",
+        "9496341150"
+      ]
+    },
+    {
+      "name": "A2",
+      "phone": "111",
+      "role": "member",
+      "id": 5
+    },
+    {
+      "name": "Akhil",
+      "phone": "1122",
+      "role": "member",
+      "id": 6
+    },
+    {
+      "name": "Akhil",
+      "phone": "11",
+      "role": "member",
+      "id": 7
+    },
+    {
+      "name": "abc",
+      "phone": "1",
+      "role": "member",
+      "id": 8
+    },
+    {
+      "name": "Demo User",
+      "phone": "555666777",
+      "role": "member",
+      "id": 9
+    },
+    {
+      "name": "aa",
+      "phones": [
+        "22"
+      ],
+      "role": "member",
+      "id": 10
+    },
+    {
+      "name": "user11",
+      "phones": [
+        "1111"
+      ],
+      "role": "member",
+      "id": 11
+    }
+  ],
+  "menus": [
+    {
+      "date": "2025-11-23",
+      "meal_type": "lunch",
+      "items": [
+        {
+          "name": "Choru11",
+          "enabled": true
+        },
+        {
+          "name": "Fish1",
+          "enabled": true
+        },
+        {
+          "name": "l2",
+          "enabled": true
+        },
+        {
+          "name": "s",
+          "enabled": true
+        }
+      ],
+      "id": 1
+    },
+    {
+      "date": "2025-11-23",
+      "meal_type": "breakfast",
+      "items": [
+        {
+          "name": "Puttu",
+          "enabled": true
+        },
+        {
+          "name": "Kadala",
+          "enabled": true
+        },
+        {
+          "name": "Juice",
+          "enabled": true
+        },
+        {
+          "name": "aa",
+          "enabled": true
+        }
+      ],
+      "id": 2
+    },
+    {
+      "date": "2025-11-23",
+      "meal_type": "dinner",
+      "items": [
+        {
+          "name": "Chapthi1",
+          "enabled": true
+        },
+        {
+          "name": "Egg curry",
+          "enabled": true
+        },
+        {
+          "name": "Dn2",
+          "enabled": false
+        }
+      ],
+      "id": 3
+    },
+    {
+      "date": "2025-11-24",
+      "meal_type": "lunch",
+      "items": [
+        {
+          "name": "q",
+          "enabled": true
+        },
+        {
+          "name": "q",
+          "enabled": true
+        },
+        {
+          "name": "q",
+          "enabled": true
+        }
+      ],
+      "id": 4
+    },
+    {
+      "date": "2025-11-24",
+      "meal_type": "breakfast",
+      "items": [
+        {
+          "name": "qq1",
+          "enabled": true
+        },
+        {
+          "name": "aa2",
+          "enabled": true
+        },
+        {
+          "name": "223",
+          "enabled": true
+        }
+      ],
+      "id": 5
+    }
+  ],
+  "orders": [
+    {
+      "user_id": 2,
+      "menu_id": 1,
+      "id": 1,
+      "quantities": {
+        "0": 3,
+        "1": 5
+      },
+      "status": "ordered"
+    },
+    {
+      "user_id": 3,
+      "menu_id": 1,
+      "status": "opt-in",
+      "id": 2
+    },
+    {
+      "user_id": 4,
+      "menu_id": 1,
+      "status": "ordered",
+      "id": 3,
+      "quantities": {
+        "0": 16,
+        "1": 0,
+        "2": 0,
+        "Choru11": 1,
+        "Fish1": 1,
+        "l2": 2,
+        "Choru": 3,
+        "Fish": 4,
+        "L13": 2,
+        "l3": 2
+      }
+    },
+    {
+      "user_id": 2,
+      "menu_id": 2,
+      "status": "ordered",
+      "id": 4,
+      "quantities": {
+        "0": 15,
+        "1": 2,
+        "2": 5
+      }
+    },
+    {
+      "user_id": 2,
+      "menu_id": 3,
+      "status": "ordered",
+      "id": 5,
+      "quantities": {
+        "0": 5,
+        "1": 6
+      }
+    },
+    {
+      "user_id": 7,
+      "menu_id": 1,
+      "id": 6,
+      "quantities": {
+        "L13": 3,
+        "l3": 4,
+        "l2": 5
+      },
+      "status": "ordered"
+    },
+    {
+      "user_id": 7,
+      "menu_id": 2,
+      "id": 7,
+      "quantities": {
+        "B1": 1,
+        "B2": 2,
+        "Juice": 0,
+        "Puttu188": 5
+      },
+      "status": "ordered"
+    },
+    {
+      "user_id": 7,
+      "menu_id": 3,
+      "id": 8,
+      "quantities": {
+        "Dn1": 5,
+        "Dn2": 6
+      },
+      "status": "ordered"
+    },
+    {
+      "user_id": 8,
+      "menu_id": 3,
+      "quantities": {
+        "ase1": 1,
+        "aaa1": 0
+      },
+      "status": "ordered",
+      "id": 9
+    },
+    {
+      "user_id": 8,
+      "menu_id": 2,
+      "quantities": {
+        "Eggs1": 1,
+        "Toast1": 2,
+        "Juice": 0,
+        "Puttu188": 3
+      },
+      "status": "ordered",
+      "id": 10
+    },
+    {
+      "user_id": 8,
+      "menu_id": 1,
+      "quantities": {
+        "Rice": 3,
+        "Dal": 4,
+        "Chicken Curry": 5
+      },
+      "status": "ordered",
+      "id": 11
+    },
+    {
+      "user_id": 4,
+      "menu_id": 3,
+      "quantities": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "Chapthi": 51,
+        "Egg curry": 61,
+        "Dn2": 3,
+        "Dn1": 3
+      },
+      "status": "ordered",
+      "id": 12
+    },
+    {
+      "user_id": 4,
+      "menu_id": 2,
+      "quantities": {
+        "0": 23,
+        "1": 5,
+        "2": 0,
+        "Puttu188": 13,
+        "Kadala1111": 1,
+        "Juice": 0,
+        "Puttu": 1,
+        "Kadala": 2,
+        "B1": 1,
+        "B2": 1
+      },
+      "status": "ordered",
+      "id": 13
+    },
+    {
+      "user_id": 3,
+      "menu_id": 2,
+      "quantities": {
+        "2": 50
+      },
+      "status": "ordered",
+      "id": 14
+    }
+  ],
+  "expenses": []
+}
